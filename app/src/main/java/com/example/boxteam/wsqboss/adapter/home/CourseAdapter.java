@@ -2,9 +2,8 @@ package com.example.boxteam.wsqboss.adapter.home;
 
 import android.content.Context;
 
-import com.example.boxteam.wsqboss.base.BaseAdapter;
+import com.example.boxteam.base.BaseAdapter;
 import com.example.boxteam.wsqboss.bean.home.CourseBean;
-import com.example.boxteam.wsqboss.bean.home.IntroduceBean;
 
 import java.util.List;
 

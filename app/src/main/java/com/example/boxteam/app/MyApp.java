@@ -1,4 +1,4 @@
-package com.example.boxteam.wsqboss.app;
+package com.example.boxteam.app;
 
 import android.app.Application;
 

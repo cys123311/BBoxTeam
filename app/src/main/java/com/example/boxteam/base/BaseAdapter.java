@@ -1,4 +1,4 @@
-package com.example.boxteam.wsqboss.base;
+package com.example.boxteam.base;
 
 import android.content.Context;
 import android.util.SparseArray;

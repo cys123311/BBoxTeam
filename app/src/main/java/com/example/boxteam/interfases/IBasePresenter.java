@@ -1,4 +1,4 @@
-package com.example.boxteam.wsqboss.interfases;
+package com.example.boxteam.interfases;
 
 public interface IBasePresenter<V extends IBaseView> {
 

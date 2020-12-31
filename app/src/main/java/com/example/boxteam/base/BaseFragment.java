@@ -1,4 +1,4 @@
-package com.example.boxteam.wsqboss.base;
+package com.example.boxteam.base;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 
-import com.example.boxteam.wsqboss.interfases.IBaseView;
+import com.example.boxteam.interfases.IBaseView;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;

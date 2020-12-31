@@ -1,9 +1,9 @@
-package com.example.boxteam.wsqboss.base;
+package com.example.boxteam.base;
 
 
 
-import com.example.boxteam.wsqboss.interfases.IBasePresenter;
-import com.example.boxteam.wsqboss.interfases.IBaseView;
+import com.example.boxteam.interfases.IBasePresenter;
+import com.example.boxteam.interfases.IBaseView;
 
 import java.lang.ref.WeakReference;
 

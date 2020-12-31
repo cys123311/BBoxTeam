@@ -1,12 +1,12 @@
-package com.example.boxteam.wsqboss.base;
+package com.example.boxteam.base;
 
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.boxteam.wsqboss.interfases.IBasePresenter;
-import com.example.boxteam.wsqboss.interfases.IBaseView;
+import com.example.boxteam.interfases.IBasePresenter;
+import com.example.boxteam.interfases.IBaseView;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;

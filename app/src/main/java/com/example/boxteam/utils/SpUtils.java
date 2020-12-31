@@ -1,9 +1,9 @@
-package com.example.boxteam.wsqboss.utils;
+package com.example.boxteam.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.example.boxteam.wsqboss.app.MyApp;
+import com.example.boxteam.app.MyApp;
 
 
 public class SpUtils {

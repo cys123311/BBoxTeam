@@ -1,4 +1,4 @@
-package com.example.boxteam.wsqboss.utils;
+package com.example.boxteam.utils;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -12,8 +12,8 @@ import android.widget.ImageView;
 import androidx.core.content.ContextCompat;
 
 import com.bumptech.glide.Glide;
-import com.example.boxteam.wsqboss.app.Constants;
-import com.example.boxteam.wsqboss.app.MyApp;
+import com.example.boxteam.app.Constants;
+import com.example.boxteam.app.MyApp;
 
 
 public class ImageLoader {

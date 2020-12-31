@@ -1,4 +1,4 @@
-package com.example.boxteam.wsqboss.utils;
+package com.example.boxteam.utils;
 
 import android.text.TextUtils;
 import android.widget.TextView;

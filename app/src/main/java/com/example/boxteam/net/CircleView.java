@@ -1,4 +1,4 @@
-package com.example.boxteam.wsqboss.net;
+package com.example.boxteam.net;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

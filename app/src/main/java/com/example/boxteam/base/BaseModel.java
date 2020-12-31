@@ -1,9 +1,9 @@
-package com.example.boxteam.wsqboss.base;
+package com.example.boxteam.base;
 
 
 
 
-import com.example.boxteam.wsqboss.interfases.IBaseModel;
+import com.example.boxteam.interfases.IBaseModel;
 
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;

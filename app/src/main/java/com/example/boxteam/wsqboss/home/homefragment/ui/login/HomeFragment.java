@@ -5,11 +5,16 @@ import android.widget.ImageView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.boxteam.R;
+import com.example.boxteam.wsqboss.adapter.home.CourseAdapter;
+import com.example.boxteam.wsqboss.adapter.home.IntroduceAdapter;
+import com.example.boxteam.wsqboss.adapter.home.LiveAdapter;
+import com.example.boxteam.wsqboss.adapter.home.OneAdapter;
 import com.example.boxteam.wsqboss.base.BaseFragment;
 import com.example.boxteam.wsqboss.base.BasePresenter;
 import com.example.boxteam.wsqboss.bean.home.CourseBean;
@@ -75,6 +80,32 @@ public class HomeFragment extends BaseFragment {
             courseBeanList.add(new CourseBean(R.mipmap.jifeng_miaomiao,"妙妙","5岁","给你来一段巴赫小步舞曲"));
             oneBeanList.add(new OneBean(R.mipmap.jifeng_gangpin));
         }
+
+        rvIntroduce.setLayoutManager(new StaggeredGridLayoutManager(1,StaggeredGridLayoutManager.HORIZONTAL));
+
+        IntroduceAdapter introduceAdapter = new IntroduceAdapter(getActivity(),introduceBeanList);
+
+        rvIntroduce.setAdapter(introduceAdapter);
+
+        rvLive.setLayoutManager(new StaggeredGridLayoutManager(1,StaggeredGridLayoutManager.HORIZONTAL));
+
+        LiveAdapter liveAdapter = new LiveAdapter(getActivity(),liveBeanList);
+
+        rvLive.setAdapter(liveAdapter);
+
+        rvCourse.setLayoutManager(new StaggeredGridLayoutManager(1,StaggeredGridLayoutManager.HORIZONTAL));
+
+        CourseAdapter courseAdapter = new CourseAdapter(getActivity(),courseBeanList);
+
+        rvCourse.setAdapter(courseAdapter);
+
+        rvOne.setLayoutManager(new StaggeredGridLayoutManager(1,StaggeredGridLayoutManager.HORIZONTAL));
+
+        OneAdapter oneAdapter = new OneAdapter(getActivity(),oneBeanList);
+
+        rvOne.setAdapter(oneAdapter);
+
+
 
     }
 

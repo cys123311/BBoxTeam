@@ -9,15 +9,26 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.boxteam.wsqboss.home.HomeActivity;
+import com.example.boxteam.wsqboss.home.main.HotActivity;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
+import butterknife.Unbinder;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView text;
+    @BindView(R.id.text)
+    TextView text;
+    @BindView(R.id.text_hot)
+    TextView textHot;
+    private Unbinder bind;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        bind = ButterKnife.bind(this);
         initView();
         int i = 0;
 
@@ -25,13 +36,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        text = (TextView) findViewById(R.id.text);
+        text.setOnClickListener(this::onViewClicked);
+        textHot.setOnClickListener(this::onViewClicked);
+    }
 
-        text.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+    @OnClick({R.id.text, R.id.text_hot})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.text:
                 startActivity(new Intent(MainActivity.this, HomeActivity.class));
-            }
-        });
+
+                break;
+            case R.id.text_hot:
+                startActivity(new Intent(MainActivity.this, HotActivity.class));
+                break;
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        bind.unbind();
     }
 }

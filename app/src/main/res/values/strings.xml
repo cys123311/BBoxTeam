@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">BoxTeam</string>
+    <string name="job_card_content1">请选择真实的身份，</string>
+    <string name="job_card_content2">身份一旦确认将无法更改，</string>
+    <string name="job_card_content3">针对不同的身份，会有不同功能上的差异</string>
+    <string name="custom1">您好，很高兴为您服务，请问有什么可以帮助您的？</string>
+    <string name="custom2">亲爱的同学您好，季风音乐课程是制作好的零到高级钢琴系列课程</string>
+    <string name="custom3">付款后老师会加您好友，课后可以随时找老师辅导，练熟曲子后发给老师检查</string>
+    <string name="loginagree">你的微信头像、昵称、地区和性别信息</string>
 </resources>

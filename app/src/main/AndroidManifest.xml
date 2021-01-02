@@ -9,11 +9,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".lc.MessageActivity">
+
+        </activity>
+        <activity android:name=".lc.UserInfoActivity">
+
+        </activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".lc.JobCardActivity">
+
+        </activity>
+        <activity android:name=".lc.splace.SplaceActivity">
+
+        </activity>
+        <activity android:name=".lc.CustomActivity">
+
+        </activity>
+        <activity android:name=".lc.LoginAgreeActivity">
+
+        </activity>
+        <activity android:name=".lc.IdentifyCodeActivity">
+
+        </activity>
+        <activity android:name=".lc.ClasssActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
     </application>

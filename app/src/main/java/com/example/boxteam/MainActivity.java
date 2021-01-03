@@ -37,6 +37,5 @@ public class MainActivity extends AppCompatActivity {
             Glide.with(this).load(list.get(i)).into(imageView);
             pileLayout.addView(imageView);
         }
-
     }
 }

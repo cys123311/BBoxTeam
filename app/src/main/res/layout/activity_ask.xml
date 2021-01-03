@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp_5"
+    tools:context=".bigboss.ask.AskActivity">
+
+    <ImageView
+        android:id="@+id/iv_ask_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/callcall"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_ask_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_5"
+        android:text="请假"
+        android:textColor="#101010"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_ask_txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="正在学习"
+        android:textColor="#101010"
+        android:textSize="@dimen/dp_26"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/iv_ask_call" />
+
+    <TextView
+        android:id="@+id/tv_ask_txt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_6"
+        android:text="钢琴一对一线上直播课"
+        android:textColor="#101010"
+        app:layout_constraintTop_toBottomOf="@id/tv_ask_txt2" />
+
+    <TextView
+        android:id="@+id/tv_ask_txt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_6"
+        android:text="刘淑琴老师"
+        android:textColor="#101010"
+        app:layout_constraintTop_toBottomOf="@id/tv_ask_txt3" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="#F1EEEE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_ask_txt4">
+
+
+        <LinearLayout
+            android:id="@+id/ll_wl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_one"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:background="@drawable/count_shape"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/dp_16" />
+
+                <View
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="#FF9800" />
+
+                <TextView
+                    android:id="@+id/tv_two"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:background="@drawable/count_shape"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/dp_16" />
+
+                <View
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="#FF9800" />
+
+                <TextView
+                    android:id="@+id/tv_three"
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:background="@drawable/count_shape"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/dp_16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ll1">
+
+                <TextView
+                    android:id="@+id/tv_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="      提交申请         "
+                    android:textSize="@dimen/dp_16" />
+
+                <TextView
+                    android:id="@+id/tv_txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="  审核           "
+                    android:textSize="@dimen/dp_16" />
+
+                <TextView
+                    android:id="@+id/tv_txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="   完成            "
+                    android:textSize="@dimen/dp_16" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_wl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_60"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_60"
+            android:background="@drawable/ask_buttom"
+            app:layout_constraintTop_toBottomOf="@+id/ll_wl">
+
+            <TextView
+                android:id="@+id/tv_ask_txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+
+                android:text="申请时间"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_ask_txt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="选择申请时间"
+                app:layout_constraintLeft_toRightOf="@id/tv_ask_txt5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/count_shape"
+            android:gravity="center"
+            android:text="请假申请"
+            android:textColor="#fff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_wl" />
+
+        <TextView
+            android:text="规则说明"
+            android:id="@+id/tv_ask_txt7"
+            android:layout_margin="@dimen/dp_5"
+            app:layout_constraintTop_toBottomOf="@id/btn_login"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="1.请假次数 每年不超过XXXXX，XXXXXXXXXXXXX。"
+            android:id="@+id/tv_ask_txt8"
+            android:layout_margin="@dimen/dp_5"
+            app:layout_constraintTop_toBottomOf="@id/tv_ask_txt7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="2.提交后XX分钟以内可以取消请假申请。"
+            android:id="@+id/tv_ask_txt9"
+            android:layout_margin="@dimen/dp_5"
+            app:layout_constraintTop_toBottomOf="@id/tv_ask_txt8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

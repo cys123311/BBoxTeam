@@ -1,10 +1,12 @@
 package com.example.boxteam;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
-
-import androidx.appcompat.app.AppCompatActivity;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.boxteam.custom.PileLayout;
@@ -12,7 +14,24 @@ import com.example.boxteam.custom.PileLayout;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+
 public class MainActivity extends AppCompatActivity {
+
+    @BindView(R.id.tv_jf)
+    TextView tvJf;
+    @BindView(R.id.tv_zf)
+    TextView tvZf;
+    @BindView(R.id.tv_rl)
+    TextView tvRl;
+    @BindView(R.id.tv_category)
+    TextView tvCategory;
+    @BindView(R.id.tv_ask)
+    TextView tvAsk;
+    @BindView(R.id.tv_activity)
+    TextView tvActivity;
+    @BindView(R.id.tv_parent)
+    TextView tvParent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.boxteam">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -24,7 +29,6 @@
         <activity android:name=".lc.UserInfoActivity">
 
         </activity>
-        <activity android:name=".MainActivity"></activity>
         <activity android:name=".lc.JobCardActivity">
 
         </activity>
@@ -43,7 +47,18 @@
         <activity android:name=".lc.ClasssActivity">
 
         </activity>
-        <activity android:name=".lc.CourseSelection">
+        <activity android:name=".lc.CourseSelection"/>
+        <activity android:name=".bigboss.activity.ActivityActivity"/>
+        <activity android:name=".bigboss.ask.AskActivity" />
+        <activity android:name=".bigboss.parent.ParentActivity" />
+        <activity android:name=".bigboss.zf.Zf3Activity" />
+        <activity android:name=".bigboss.category.CategoryActivity" />
+        <activity android:name=".bigboss.rl.RlActivity" />
+        <activity android:name=".bigboss.zf.Zf2Activity" />
+        <activity android:name=".bigboss.zf.ZfActivity" />
+        <activity android:name=".bigboss.jf.JfActivity" />
+        <activity android:name=".bigboss.train.TrainActivity" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

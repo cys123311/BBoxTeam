@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,5 +10,70 @@
         android:id="@+id/pile_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:PileLayout_pileWidth="10dp"/>
-</LinearLayout>
+        android:text="bigBoss!"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_jf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="积分!"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <TextView
+        android:id="@+id/tv_zf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="支付"
+        app:layout_constraintTop_toBottomOf="@id/tv_jf"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <TextView
+        android:id="@+id/tv_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日历"
+        app:layout_constraintTop_toBottomOf="@id/tv_zf"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="类别"
+        app:layout_constraintTop_toBottomOf="@id/tv_rl"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_ask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请假"
+        app:layout_constraintTop_toBottomOf="@id/tv_category"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <TextView
+        android:id="@+id/tv_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="活动"
+        app:layout_constraintTop_toBottomOf="@id/tv_ask"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="家长专区"
+        app:layout_constraintTop_toBottomOf="@id/tv_activity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

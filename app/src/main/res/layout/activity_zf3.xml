@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".bigboss.zf.Zf3Activity">
+
+    <RelativeLayout
+        android:id="@+id/mRl_zwx_mode_of_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_return"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@mipmap/callcall" />
+
+        <TextView
+            android:id="@+id/tv_toobar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="季风音乐"
+            android:textColor="#0E0E0E"
+            android:textSize="@dimen/dp_26" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/mLl_zwx_mode_of_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_20"
+        android:background="@drawable/ic_zwx_shape_ciecle"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/mRl_zwx_mode_of_payment1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mRl_zwx_mode_of_payment">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:text="声乐系统课"
+            android:textColor="#0E0E0E"
+            android:textSize="@dimen/dp_26"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="商户订单号：1337690882996701184" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="更多信息∨"
+            android:textColor="#03A9F4" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/mRl_zwx_mode_of_payment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/ic_zwx_shape_ciecle"
+        android:padding="@dimen/dp_10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mLl_zwx_mode_of_payment">
+
+        <TextView
+            android:id="@+id/tv_zwx_mode_of_payment_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付方式"
+            android:textSize="@dimen/sp_18" />
+
+
+        <LinearLayout
+            android:id="@+id/mLl_zwx_mode_of_payment1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_zwx_mode_of_payment_type"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:background="@mipmap/icon_zwx_wei" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:text="微信支付"
+                android:textSize="@dimen/sp_20" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="@dimen/dp_120"
+                android:checked="true" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/mLl_zwx_mode_of_payment2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mLl_zwx_mode_of_payment1"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:background="@mipmap/icon_zwx_zhi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:text="支付宝支付"
+                android:textSize="@dimen/sp_20" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="@dimen/dp_100" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mLl_zwx_mode_of_payment3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mLl_zwx_mode_of_payment2"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:background="@mipmap/icon_zwx_yu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:text="余额"
+                android:textSize="@dimen/sp_20" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="@dimen/dp_160" />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/mV_zwx_mode_of_payment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_below="@id/mLl_zwx_mode_of_payment3"
+            android:layout_marginTop="20dp"
+            android:background="#918F8F" />
+
+        <LinearLayout
+            android:id="@+id/mLl_zwx_mode_of_payment4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mV_zwx_mode_of_payment"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:background="@mipmap/icon_zwx_yu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:text="使用优惠券"
+                android:textSize="@dimen/sp_20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:text="去查看"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_action_action_search"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/tv_zwx_settlement_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_20"
+            android:paddingTop="@dimen/dp_20"
+            android:text="应付金额："
+            android:textColor="#0B0B0B"
+            android:textSize="@dimen/sp_20"
+            app:layout_constraintBottom_toTopOf="@+id/btn_zwx_mode_of_payment_paymant"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_zwx_mode_of_payment_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥"
+            android:textColor="#FF5722"
+            android:textSize="@dimen/sp_20"
+            app:layout_constraintBottom_toTopOf="@+id/btn_zwx_mode_of_payment_paymant"
+            app:layout_constraintRight_toLeftOf="@+id/tv_zwx_mode_of_payment_price" />
+
+        <TextView
+            android:id="@+id/tv_zwx_mode_of_payment_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_20"
+            android:text="299"
+            android:textColor="#FF5722"
+            android:textSize="@dimen/sp_30"
+            app:layout_constraintBottom_toTopOf="@+id/btn_zwx_mode_of_payment_paymant"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <Button
+            android:id="@+id/btn_zwx_mode_of_payment_paymant"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_margin="@dimen/dp_20"
+            android:background="@drawable/shape1"
+            android:text="去支付"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_24"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_zwx_settlement_sum" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

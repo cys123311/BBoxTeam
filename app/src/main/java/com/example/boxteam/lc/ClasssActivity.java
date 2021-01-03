@@ -1,6 +1,7 @@
 package com.example.boxteam.lc;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -43,6 +44,7 @@ public class ClasssActivity extends BaseActivity {
             c.setPic(R.drawable.girl);
             list.add(c);
         }
+        Log.i("111", "initView: ");
     }
 
     @Override

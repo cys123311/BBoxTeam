@@ -3,7 +3,6 @@
     package="com.example.boxteam">
 
     <application
-        android:name=".app.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -19,7 +18,32 @@
         <activity android:name=".cysboss.LogisticsActivity" />
         <activity android:name=".cysboss.DiscountActivity" />
         <activity android:name=".wsqboss.home.HomeActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".lc.MessageActivity">
+
+        </activity>
+        <activity android:name=".lc.UserInfoActivity">
+
+        </activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".lc.JobCardActivity">
+
+        </activity>
+        <activity android:name=".lc.splace.SplaceActivity">
+
+        </activity>
+        <activity android:name=".lc.CustomActivity">
+
+        </activity>
+        <activity android:name=".lc.LoginAgreeActivity">
+
+        </activity>
+        <activity android:name=".lc.IdentifyCodeActivity">
+
+        </activity>
+        <activity android:name=".lc.ClasssActivity">
+
+        </activity>
+        <activity android:name=".lc.CourseSelection">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

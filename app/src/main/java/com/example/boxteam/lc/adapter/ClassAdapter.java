@@ -1,6 +1,10 @@
 package com.example.boxteam.lc.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.text.SpannableStringBuilder;
+import android.text.Spanned;
+import android.text.style.ForegroundColorSpan;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +18,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import com.example.boxteam.R;
 import com.example.boxteam.lc.base.BaseAdapter;
 import com.example.boxteam.lc.bean.ClassBean;
+import com.example.boxteam.lc.bean.GiftMessage;
 
 import java.util.List;
 
@@ -46,6 +51,7 @@ public class ClassAdapter extends BaseAdapter {
                 ImageView iv_pop_pic = inflate.findViewById(R.id.iv_pop_pic);
                 Button btn_class_ok = inflate.findViewById(R.id.btn_class_ok);
                 PopupWindow pw = new PopupWindow(inflate,-1,-1);
+                pw.setOutsideTouchable(true);
                 //叉号
                 iv_pop_pic.setOnClickListener(new View.OnClickListener() {
                     @Override

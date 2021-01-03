@@ -30,6 +30,7 @@
         <activity android:name=".lc.UserInfoActivity">
 
         </activity>
+
         <activity android:name=".lc.JobCardActivity">
 
         </activity>
@@ -49,6 +50,9 @@
 
         </activity>
         <activity android:name=".lc.CourseSelection"/>
+
+
+
         <activity android:name=".bigboss.activity.ActivityActivity"/>
         <activity android:name=".bigboss.ask.AskActivity" />
         <activity android:name=".bigboss.parent.ParentActivity" />
@@ -63,7 +67,6 @@
         <activity android:name=".wsqboss.home.main.SetActivity" />
         <activity android:name=".wsqboss.home.main.CollectActivity" />
         <activity android:name=".wsqboss.home.main.HotActivity" />
-        <activity android:name=".wsqboss.home.HomeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

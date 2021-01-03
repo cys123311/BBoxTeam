@@ -1,10 +1,5 @@
 package com.example.boxteam.net;
 
-
-
-
-
-
 import com.example.boxteam.utils.SpUtils;
 
 import java.io.IOException;
@@ -17,18 +12,18 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class HttpmManager {
-    private static HttpmManager httpmManager;
+public class HttpManager {
+    private static HttpManager httpManager;
 
-    public static HttpmManager getHttpmManager() {
-        if (httpmManager==null){
-            synchronized (HttpmManager.class){
-                if (httpmManager==null){
-                    httpmManager = new HttpmManager();
+    public static HttpManager getHttpManager() {
+        if (httpManager==null){
+            synchronized (HttpManager.class){
+                if (httpManager==null){
+                    httpManager = new HttpManager();
                 }
             }
         }
-        return httpmManager;
+        return httpManager;
     }
 
 

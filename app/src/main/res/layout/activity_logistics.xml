@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".cysboss.LogisticsActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <RelativeLayout
+        android:paddingHorizontal="@dimen/dp_10"
+        android:paddingVertical="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_logistics_num"
+            android:text="订单编号：2323123"
+            android:paddingVertical="@dimen/dp_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_logistics_odd"
+            android:text="快递单号：123456"
+            android:layout_below="@id/tv_logistics_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="中通快递"
+            android:layout_alignTop="@id/tv_logistics_odd"
+            android:layout_alignParentRight="true"
+            android:paddingHorizontal="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_5"
+        android:background="@color/colorA"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/dp_5"
+        android:id="@+id/mRec_logistics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"/>
+</LinearLayout>

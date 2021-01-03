@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".cysboss.ScheduleActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorE">
+
+        <TextView
+            android:id="@+id/tv_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingHorizontal="@dimen/dp_10"
+            android:text="课表"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_16" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ll_addTab_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOrange"
+        android:orientation="horizontal" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/mTab_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicator="@null"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextColor="@color/colorA" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRec_schedule"
+        android:background="@color/gray_word"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"/>
+</LinearLayout>

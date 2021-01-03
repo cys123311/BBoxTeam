@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:orientation="vertical"
+    android:background="@color/colorA">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_35"
+   >
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="服务协议和隐私政策"
+        android:textSize="@dimen/dp_20"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="欢迎使用季风音乐在线教育
+        服务,在使用季风音乐之前请您仔细阅读本
+        用户协议。季风音乐感谢您的支持和信任!"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="欢迎使用季风音乐在线教育服务,
+        XXXXXXXXX。季风音乐感谢您的支持和信任欢迎
+        使用季风音乐在线教育服务,xxx季风音乐感
+        谢您的支持和信任!"
+        app:layout_constraintTop_toBottomOf="@id/tv_text1" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/tv_text2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_50"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_text">
+        <Button
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_40"
+            android:text="不同意"
+            android:textColor="#E64A19"
+            android:background="@color/colorA"
+            android:id="@+id/btn_no_consent"/>
+        <TextView
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_40"
+            android:text="同意"
+            android:textColor="#fff"
+            android:background="@color/colorA"
+            android:id="@+id/btn_consent"/>
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

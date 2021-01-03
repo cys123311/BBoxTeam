@@ -3,14 +3,22 @@
     package="com.example.boxteam">
 
     <application
+        android:name=".app.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name=".app.MyApp"
         android:theme="@style/AppTheme">
-        <activity android:name=".wsqboss.home.HomeActivity"></activity>
+        <activity android:name=".cysboss.LiveActivity"></activity>
+        <activity android:name=".cysboss.LiveOneActivity" />
+        <activity android:name=".cysboss.CourseSelection" />
+        <activity android:name=".cysboss.UserAgreementActivity" />
+        <activity android:name=".cysboss.TaskActivity" />
+        <activity android:name=".cysboss.ScheduleActivity" />
+        <activity android:name=".cysboss.LogisticsActivity" />
+        <activity android:name=".cysboss.DiscountActivity" />
+        <activity android:name=".wsqboss.home.HomeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

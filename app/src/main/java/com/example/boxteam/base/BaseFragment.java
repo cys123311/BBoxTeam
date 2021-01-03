@@ -1,9 +1,12 @@
 package com.example.boxteam.base;
 
+import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,11 +22,21 @@ public abstract class BaseFragment<P extends BasePresenter> extends Fragment imp
 
     protected P presenter;
     Unbinder unbinder;
+    protected Context mContext;
+    protected Activity mActivity;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = LayoutInflater.from(container.getContext()).inflate(getLayout(),null);
+        mContext = getContext();
+        mActivity = getActivity();
+        int layout = getLayout();
+        View view = null;
+        if(layout <= 0){
+            throw new RuntimeException("布局非法");
+        }else{
+            view = inflater.inflate(layout,container,false);
+        }
         return view;
     }
 
@@ -31,35 +44,46 @@ public abstract class BaseFragment<P extends BasePresenter> extends Fragment imp
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         unbinder = ButterKnife.bind(this,view);
-        presenter = createPersenter();
-        if (presenter!=null){
+        initView();
+        presenter = createPresenter();
+        if(presenter != null){
             presenter.attachView(this);
         }
-        initView();
         initData();
     }
 
-
-    protected abstract P createPersenter();
-
-    protected abstract void initData();
-
-    protected abstract void initView();
-
     protected abstract int getLayout();
+    protected abstract void initView();
+    protected abstract P createPresenter();
+    protected abstract  void initData();
+
+    @Override
+    public void showLoading(int visible) {
+        Toast.makeText(mContext, "加载数据失败，请检查网络！", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void showToast(String tips) {
+
+    }
 
     /**
-     * 界面销毁
+     * 跳转登录
      */
+    protected void gotoLogin(){
+
+    }
+
     @Override
     public void onDestroy() {
-        super.onDestroy();
         if(unbinder != null){
             unbinder.unbind();
         }
-        //释放p关联的v的引用
         if(presenter != null){
             presenter.unAttachView();
         }
+        mActivity = null;
+        mContext = null;
+        super.onDestroy();
     }
 }

@@ -52,11 +52,6 @@ public class HomeFragment extends BaseFragment {
     private List<OneBean> oneBeanList;
 
     @Override
-    protected BasePresenter createPersenter() {
-        return null;
-    }
-
-    @Override
     protected void initData() {
         Glide.with(this).load(R.mipmap.jifeng_game).apply(new RequestOptions().transform(new RoundedCorners(10))).into(imgEvents);
         Glide.with(this).load(R.mipmap.jifeng_train2).into(imgTrain1);
@@ -79,17 +74,12 @@ public class HomeFragment extends BaseFragment {
     }
 
     @Override
+    protected BasePresenter createPresenter() {
+        return null;
+    }
+
+    @Override
     protected int getLayout() {
         return R.layout.fragment_home;
-    }
-
-    @Override
-    public void showLoading(int visible) {
-
-    }
-
-    @Override
-    public void showToast(String tips) {
-
     }
 }

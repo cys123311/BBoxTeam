@@ -32,9 +32,10 @@ public class HomeActivity extends BaseActivity {
     }
 
     @Override
-    protected IBasePresenter createPrenter() {
+    protected IBasePresenter createPresenter() {
         return null;
     }
+
 
     @Override
     protected void initView() {

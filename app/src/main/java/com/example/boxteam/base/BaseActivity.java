@@ -13,7 +13,6 @@ import butterknife.Unbinder;
 
 public abstract class BaseActivity<P extends IBasePresenter> extends AppCompatActivity implements IBaseView {
 
-
     protected P presenter;
     Unbinder unbinder;
 
@@ -26,9 +25,8 @@ public abstract class BaseActivity<P extends IBasePresenter> extends AppCompatAc
         }else{
             setContentView(getLayout());
         }
-//        View root = LayoutInflater.from(this).inflate(getLayout(),null);
         unbinder = ButterKnife.bind(this);
-        presenter = createPrenter();
+        presenter = createPresenter();
         if(presenter != null){
             presenter.attachView(this);
         }
@@ -37,7 +35,7 @@ public abstract class BaseActivity<P extends IBasePresenter> extends AppCompatAc
     }
 
     protected abstract int getLayout();
-    protected abstract P createPrenter();
+    protected abstract P createPresenter();
     protected abstract void initView();
     protected abstract  void initData();
 

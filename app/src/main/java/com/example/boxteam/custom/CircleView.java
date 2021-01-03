@@ -1,4 +1,4 @@
-package com.example.boxteam.net;
+package com.example.boxteam.custom;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -10,6 +10,9 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 
+/**
+ * 渐变色 背景
+ */
 public class CircleView extends View {
 
     private Paint paint;//渐变色
@@ -54,7 +57,5 @@ public class CircleView extends View {
 //        final Bitmap bmm = ImageLoader.getIconBitmap(getContext(), R.drawable.s1);
         //Bitmap drawable = BitmapFactory.decodeResource(getResources(),R.mipmap.ic_launcher);
 //        canvas.drawBitmap(bmm,0,0,paint);
-
-
     }
 }

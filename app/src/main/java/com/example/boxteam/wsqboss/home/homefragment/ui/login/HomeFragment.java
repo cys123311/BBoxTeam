@@ -5,13 +5,18 @@ import android.widget.ImageView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.boxteam.R;
-import com.example.boxteam.base.BaseFragment;
-import com.example.boxteam.base.BasePresenter;
+import com.example.boxteam.wsqboss.adapter.home.CourseAdapter;
+import com.example.boxteam.wsqboss.adapter.home.IntroduceAdapter;
+import com.example.boxteam.wsqboss.adapter.home.LiveAdapter;
+import com.example.boxteam.wsqboss.adapter.home.OneAdapter;
+import com.example.boxteam.wsqboss.base.BaseFragment;
+import com.example.boxteam.wsqboss.base.BasePresenter;
 import com.example.boxteam.wsqboss.bean.home.CourseBean;
 import com.example.boxteam.wsqboss.bean.home.IntroduceBean;
 import com.example.boxteam.wsqboss.bean.home.LiveBean;
@@ -52,6 +57,11 @@ public class HomeFragment extends BaseFragment {
     private List<OneBean> oneBeanList;
 
     @Override
+    protected BasePresenter createPersenter() {
+        return null;
+    }
+
+    @Override
     protected void initData() {
         Glide.with(this).load(R.mipmap.jifeng_game).apply(new RequestOptions().transform(new RoundedCorners(10))).into(imgEvents);
         Glide.with(this).load(R.mipmap.jifeng_train2).into(imgTrain1);
@@ -71,15 +81,46 @@ public class HomeFragment extends BaseFragment {
             oneBeanList.add(new OneBean(R.mipmap.jifeng_gangpin));
         }
 
-    }
+        rvIntroduce.setLayoutManager(new StaggeredGridLayoutManager(1,StaggeredGridLayoutManager.HORIZONTAL));
 
-    @Override
-    protected BasePresenter createPresenter() {
-        return null;
+        IntroduceAdapter introduceAdapter = new IntroduceAdapter(getActivity(),introduceBeanList);
+
+        rvIntroduce.setAdapter(introduceAdapter);
+
+        rvLive.setLayoutManager(new StaggeredGridLayoutManager(1,StaggeredGridLayoutManager.HORIZONTAL));
+
+        LiveAdapter liveAdapter = new LiveAdapter(getActivity(),liveBeanList);
+
+        rvLive.setAdapter(liveAdapter);
+
+        rvCourse.setLayoutManager(new StaggeredGridLayoutManager(1,StaggeredGridLayoutManager.HORIZONTAL));
+
+        CourseAdapter courseAdapter = new CourseAdapter(getActivity(),courseBeanList);
+
+        rvCourse.setAdapter(courseAdapter);
+
+        rvOne.setLayoutManager(new StaggeredGridLayoutManager(1,StaggeredGridLayoutManager.HORIZONTAL));
+
+        OneAdapter oneAdapter = new OneAdapter(getActivity(),oneBeanList);
+
+        rvOne.setAdapter(oneAdapter);
+
+
+
     }
 
     @Override
     protected int getLayout() {
         return R.layout.fragment_home;
+    }
+
+    @Override
+    public void showLoading(int visible) {
+
+    }
+
+    @Override
+    public void showToast(String tips) {
+
     }
 }

@@ -6,9 +6,11 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.boxteam.R;
-import com.example.boxteam.base.BaseActivity;
+import com.example.boxteam.wsqboss.base.BaseActivity;
+import com.example.boxteam.wsqboss.home.homefragment.ui.login.CourseFragment;
 import com.example.boxteam.wsqboss.home.homefragment.ui.login.HomeFragment;
-import com.example.boxteam.interfases.IBasePresenter;
+import com.example.boxteam.wsqboss.home.homefragment.ui.login.MeFragment;
+import com.example.boxteam.wsqboss.interfases.IBasePresenter;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
@@ -32,18 +34,17 @@ public class HomeActivity extends BaseActivity {
     }
 
     @Override
-    protected IBasePresenter createPresenter() {
+    protected IBasePresenter createPrenter() {
         return null;
     }
-
 
     @Override
     protected void initView() {
         List<Fragment> list=new ArrayList<>();
         list.add(new HomeFragment());
+        list.add(new CourseFragment());
         list.add(new HomeFragment());
-        list.add(new HomeFragment());
-        list.add(new HomeFragment());
+        list.add(new MeFragment());
 
         mcvPager.setAdapter(new FragmentStatePagerAdapter(getSupportFragmentManager()) {
             @NonNull

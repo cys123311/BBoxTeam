@@ -20,6 +20,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -29,5 +34,100 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+    //bottom navigation
+    implementation 'androidx.navigation:navigation-fragment:2.2.2'
+    implementation 'androidx.navigation:navigation-ui:2.2.2'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    implementation 'com.prolificinteractive:material-calendarview:1.4.3'
+    implementation 'com.github.kinkoi:materialsearchview:1.4.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.7'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+
+
+
+
+
+    //无限循环的LayoutManager
+    implementation 'cn.student0.manager:repeatmanager:1.0.2'
+
+    //oss 图片先下载
+    implementation 'com.aliyun.dpa:oss-android-sdk:2.9.5'
+
+    //侧滑删除 条目
+    implementation 'com.yanzhenjie:recyclerview-swipe:1.1.4'
+
+    //citypicker 高仿iOS 滚轮实现 省市区 城市选择三级联动
+    implementation 'liji.library.dev:citypickerview:5.1.0'
+
+    //友好的加载条
+    implementation 'io.supercharge:shimmerlayout:0.5.0'
+
+    //侧边栏
+    implementation 'com.gjiazhe:wavesidebar:1.3'
+    implementation 'com.bm.photoview:library:1.4.1'
+
+    //协调者布局
+    implementation 'com.android.support:design:30.1.1'
+
+    //百分比布局
+    implementation 'com.android.support:percent:30.0.0-alpha1'
+
+    //VegaLayoutManager 自定义的LayoutManager-滚动时淡出和收缩头部itemView。
+    implementation 'com.stone.vega.library:VegaLayoutManager:1.0.6'
+
+    implementation 'com.jaeger.ninegridimageview:library:1.0.2'
+    //黄油刀
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+    //本地相册
+    //implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.5.3'
+    //implementation 'com.github.bumptech.glide:glide:4.11.0'
+
+    //vlayout 布局
+    implementation ('com.alibaba.android:vlayout:1.2.8@aar') {
+        transitive = true
+    }
+
+    //tab动画
+    //implementation 'com.github.Andy671:Dachshund-Tab-Layout:v0.3.1'
+
+    //状态栏一体化
+    implementation 'com.yanzhenjie:statusview:1.0.3'
+
+    //图片缩放
+    //implementation 'com.github.chrisbanes:PhotoView:2.0.0'
+
+    //垂直 Tab
+    implementation 'q.rorbin:VerticalTabLayout:1.2.5'
+    //Vp2
+    implementation 'androidx.appcompat:appcompat:1.3.0-alpha02'
+    implementation 'com.android.support:design:30.0.0'
+    implementation 'androidx.viewpager2:viewpager2:1.1.0-alpha01'
+
+    //ViewTooltip 工具提示条
+    implementation 'com.github.florent37:viewtooltip:1.0.3'
+
+    //毕加索 加载图片
+    implementation'com.squareup.picasso:picasso:2.5.2'
+
+    //依赖：
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+
+//读取网络图片的依赖
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+
 
 }

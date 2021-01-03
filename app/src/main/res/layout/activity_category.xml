@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".bigboss.category.CategoryActivity">
+
+<TextView
+    android:id="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_20"
+    android:text="课程类别"
+    android:textColor="#000000"
+    android:textSize="@dimen/sp_25"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/title2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_10"
+    android:text="课程类型"
+    android:textColor="#000000"
+    android:textSize="@dimen/sp_25"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/title" />
+
+<TextView
+    android:id="@+id/type1"
+    android:layout_width="@dimen/dp_100"
+    android:layout_height="@dimen/dp_50"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@drawable/shape2"
+    android:gravity="center"
+    android:text="一对一陪练课"
+    android:textColor="#000000"
+    android:textSize="@dimen/sp_15"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/title2" />
+
+<TextView
+    android:id="@+id/type2"
+    android:layout_width="@dimen/dp_100"
+    android:layout_height="@dimen/dp_50"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:background="@drawable/shape3"
+    android:gravity="center"
+    android:text="一对十小组课"
+    android:textColor="#000000"
+    android:textSize="@dimen/sp_15"
+    app:layout_constraintLeft_toRightOf="@id/type1"
+    app:layout_constraintRight_toLeftOf="@id/type3"
+    app:layout_constraintTop_toBottomOf="@id/title2" />
+
+<TextView
+    android:id="@+id/type3"
+    android:layout_width="@dimen/dp_100"
+    android:layout_height="@dimen/dp_50"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:background="@drawable/shape3"
+    android:gravity="center"
+    android:text="一对N公开课"
+    android:textColor="#000000"
+    android:textSize="@dimen/sp_15"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/title2" />
+
+<TextView
+    android:id="@+id/title3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_20"
+    android:layout_marginRight="@dimen/dp_10"
+    android:gravity="center"
+    android:text="课程类型"
+    android:textColor="#000000"
+    android:textSize="@dimen/sp_25"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/type1" />
+
+<TextView
+    android:id="@+id/type4"
+    android:layout_width="@dimen/dp_100"
+    android:layout_height="@dimen/dp_50"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@drawable/shape2"
+    android:gravity="center"
+    android:text="钢琴"
+    android:textColor="#000000"
+    android:textSize="@dimen/sp_15"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/title3" />
+
+<TextView
+    android:layout_width="@dimen/dp_100"
+    android:layout_height="@dimen/dp_50"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:background="@drawable/shape3"
+    android:gravity="center"
+    android:text="吉他"
+    android:textColor="#000000"
+    android:textSize="@dimen/sp_15"
+    app:layout_constraintLeft_toRightOf="@id/type1"
+    app:layout_constraintRight_toLeftOf="@id/type3"
+    app:layout_constraintTop_toBottomOf="@id/title3" />
+
+<TextView
+    android:layout_width="@dimen/dp_100"
+    android:layout_height="@dimen/dp_50"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:background="@drawable/shape3"
+    android:gravity="center"
+    android:text="声乐"
+    android:textColor="#000000"
+    android:textSize="@dimen/sp_15"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/title3" />
+
+<TextView
+    android:id="@+id/type5"
+    android:layout_width="@dimen/dp_100"
+    android:layout_height="@dimen/dp_50"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@drawable/shape3"
+    android:gravity="center"
+    android:text="小提琴"
+    android:textColor="#000000"
+    android:textSize="@dimen/sp_15"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/type4" />
+
+<TextView
+    android:layout_width="@dimen/dp_100"
+    android:layout_height="@dimen/dp_50"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:background="@drawable/shape3"
+    android:gravity="center"
+    android:text="架子鼓"
+    android:textColor="#000000"
+    android:textSize="@dimen/sp_15"
+    app:layout_constraintLeft_toRightOf="@id/type1"
+    app:layout_constraintRight_toLeftOf="@id/type3"
+    app:layout_constraintTop_toBottomOf="@id/type4" />
+
+<TextView
+    android:layout_width="@dimen/dp_100"
+    android:layout_height="@dimen/dp_50"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:background="@drawable/shape3"
+    android:gravity="center"
+    android:text="尤克里里"
+    android:textColor="#000000"
+    android:textSize="@dimen/sp_15"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/type4" />
+
+<TextView
+    android:id="@+id/type6"
+    android:layout_width="@dimen/dp_100"
+    android:layout_height="@dimen/dp_50"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@drawable/shape3"
+    android:gravity="center"
+    android:text="大提琴"
+    android:textColor="#000000"
+    android:textSize="@dimen/sp_15"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/type5" />
+
+<TextView
+    android:layout_width="@dimen/dp_100"
+    android:layout_height="@dimen/dp_50"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:background="@drawable/shape3"
+    android:gravity="center"
+    android:text="架子鼓"
+    android:textColor="#000000"
+    android:textSize="@dimen/sp_15"
+    app:layout_constraintLeft_toRightOf="@id/type1"
+    app:layout_constraintRight_toLeftOf="@id/type3"
+    app:layout_constraintTop_toBottomOf="@id/type5" />
+
+<TextView
+    android:layout_width="@dimen/dp_100"
+    android:layout_height="@dimen/dp_50"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10"
+    android:background="@drawable/shape3"
+    android:gravity="center"
+    android:text="尤克里里"
+    android:textColor="#000000"
+    android:textSize="@dimen/sp_15"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/type5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

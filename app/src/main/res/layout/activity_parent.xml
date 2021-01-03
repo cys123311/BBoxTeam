@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F5F5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/shape3"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_3"
+            android:src="@mipmap/yang"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="青少年模式"
+            android:textColor="#101010"
+            android:textSize="@dimen/dp_16"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/image_parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/open"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_parent_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:text="已开启"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/image_open"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/shape3"
+        app:layout_constraintTop_toBottomOf="@id/cl1">
+
+        <ImageView
+            android:id="@+id/image_yy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_2"
+            android:src="@mipmap/yy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预约课表"
+            android:textColor="#101010"
+            android:textSize="@dimen/dp_16"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/image_yy"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_right"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_margin="@dimen/dp_10"
+            android:src="@mipmap/right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/shape3"
+        android:padding="@dimen/dp_10"
+        app:layout_constraintTop_toBottomOf="@+id/cl2">
+
+        <TextView
+            android:id="@+id/tv_parent_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="钢琴一对一"
+            android:textColor="#0C0C0C"
+            android:textSize="@dimen/dp_20"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_parent_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[学习中]"
+            android:textColor="#0C0C0C"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_parent_txt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="学习进度"
+            app:layout_constraintTop_toBottomOf="@id/tv_parent_txt1" />
+
+        <ProgressBar
+            android:id="@+id/pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_3"
+            android:max="100"
+            android:paddingRight="@dimen/dp_2"
+            android:progress="98"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tv_progress_num"
+            app:layout_constraintTop_toBottomOf="@id/tv_parent_txt3" />
+
+        <TextView
+            android:id="@+id/tv_progress_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_2"
+            android:text="98%"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_parent_txt3" />
+
+        <TextView
+            android:id="@+id/tv_parent_txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/shape_hui"
+            android:text="钢琴一对一陪练课程"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pb" />
+
+        <TextView
+            android:id="@+id/tv_parent_txt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="学习时间长18个小时12分"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_progress_num" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            app:layout_constraintTop_toBottomOf="@id/tv_parent_txt5">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_32"
+                android:layout_margin="@dimen/dp_4"
+                android:layout_weight="1"
+                android:background="@drawable/shape2"
+                android:text="作业情况"
+                android:textColor="#FF5722"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_32"
+                android:layout_margin="@dimen/dp_4"
+                android:layout_weight="1"
+                android:background="@drawable/shape2"
+                android:text="上课情况分析表"
+                android:textColor="#FF5722"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_32"
+                android:layout_margin="@dimen/dp_4"
+                android:layout_weight="1"
+                android:background="@drawable/shape2"
+                android:text="请假"
+                android:textColor="#FF5722"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/shape3"
+        android:padding="@dimen/dp_10"
+        app:layout_constraintTop_toBottomOf="@+id/cl3">
+
+        <TextView
+            android:id="@+id/tv_parent_txt6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小提琴一对一"
+            android:textColor="#0C0C0C"
+            android:textSize="@dimen/dp_20"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_parent_txt7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[学习中]"
+            android:textColor="#0C0C0C"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_parent_txt8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="学习进度"
+            app:layout_constraintTop_toBottomOf="@id/tv_parent_txt6" />
+
+        <ProgressBar
+            android:id="@+id/pb2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_3"
+            android:max="100"
+            android:paddingRight="@dimen/dp_2"
+            android:progress="98"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tv_progress_num2"
+            app:layout_constraintTop_toBottomOf="@id/tv_parent_txt8" />
+
+        <TextView
+            android:id="@+id/tv_progress_num2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_2"
+            android:text="98%"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_parent_txt8" />
+
+        <TextView
+            android:id="@+id/tv_parent_txt9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/shape_hui"
+            android:text="钢琴一对一陪练课程"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pb2" />
+
+        <TextView
+            android:id="@+id/tv_parent_txt10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="学习时间长18个小时12分"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_progress_num2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            app:layout_constraintTop_toBottomOf="@id/tv_parent_txt10">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_32"
+                android:layout_margin="@dimen/dp_4"
+                android:layout_weight="1"
+                android:background="@drawable/shape2"
+                android:text="作业情况"
+                android:textColor="#FF5722"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_32"
+                android:layout_margin="@dimen/dp_4"
+                android:layout_weight="1"
+                android:background="@drawable/shape2"
+                android:text="上课情况分析表"
+                android:textColor="#FF5722"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_32"
+                android:layout_margin="@dimen/dp_4"
+                android:layout_weight="1"
+                android:background="@drawable/shape2"
+                android:text="请假"
+                android:textColor="#FF5722"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

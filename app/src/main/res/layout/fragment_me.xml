@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wsqboss.home.homefragment.ui.login.MeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:background="@color/gray_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_do"
+                    android:layout_width="@dimen/dp_15"
+                    android:layout_height="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:src="@mipmap/jifeng_me_dofang"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_do">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10">
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:text="壮壮"
+                        android:textSize="@dimen/dp_20"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:src="@mipmap/jifeng_me_xiugai"
+                        app:layout_constraintLeft_toRightOf="@+id/txt_name"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="188*******8888"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txt_name" />
+
+                    <ImageView
+                        android:id="@+id/img_header"
+                        android:layout_width="@dimen/dp_60"
+                        android:layout_height="@dimen/dp_60"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="36dp"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:background="@drawable/shape_me_s"
+                android:layout_margin="@dimen/dp_20">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_me_s"
+                    android:scaleType="fitXY"
+                   />
+
+                <ImageView
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_width="@dimen/dp_14"
+                    android:layout_height="@dimen/dp_14"
+                    android:src="@mipmap/jifeng_me_jifen" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的积分"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:layout_marginTop="@dimen/dp_25"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp_20"
+                    android:text="600"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:layout_marginTop="@dimen/dp_32"
+                    android:layout_marginLeft="@dimen/dp_60"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_12"
+                    android:text="f币"
+                    android:textColor="@color/white" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@drawable/shape_me"
+                    android:layout_alignParentRight="true"
+                    android:text="查看更多"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:padding="@dimen/dp_10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:background="@drawable/shape_me_s"
+                android:layout_marginBottom="@dimen/dp_20">
+                <RelativeLayout
+                    android:id="@+id/collect"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_30"
+                        android:src="@mipmap/jifeng_me_shoucang" />
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_40"
+                        android:text="我的收藏"/>
+                    <View
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorGray"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_30"
+                        android:src="@mipmap/jifeng_me_dingban"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_40"
+                        android:gravity="center"
+                        android:text="我的订单"/>
+                    <View
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorGray"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_30"
+                        android:src="@mipmap/jifeng_me_guanli"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_40"
+                        android:text="课程管理"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:paddingEnd="@dimen/dp_20"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:src="@mipmap/jifeng_me_wode"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_22"
+                        android:layout_marginLeft="@dimen/dp_44"
+                        android:text="我的作业"/>
+                    <TextView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="@dimen/dp_20"
+                        android:background="@drawable/shape_me_num"/>
+                    <ImageView
+                        android:src="@mipmap/jifeng_me_jiantou"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:background="@color/gray_word"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:paddingEnd="@dimen/dp_20"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:src="@mipmap/jifeng_me_huodong"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_22"
+                        android:layout_marginLeft="@dimen/dp_44"
+                        android:text="我的活动"/>
+                    <ImageView
+                        android:src="@mipmap/jifeng_me_jiantou"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:background="@color/gray_word"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:paddingEnd="@dimen/dp_20"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:src="@mipmap/jifeng_me_youhui"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_22"
+                        android:layout_marginLeft="@dimen/dp_44"
+                        android:text="我的优惠卷"/>
+                    <ImageView
+                        android:src="@mipmap/jifeng_me_jiantou"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:background="@color/gray_word"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:paddingEnd="@dimen/dp_20"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:src="@mipmap/jifeng_me_jia"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_22"
+                        android:layout_marginLeft="@dimen/dp_44"
+                        android:text="家长专区"/>
+                    <ImageView
+                        android:src="@mipmap/jifeng_me_jiantou"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:background="@color/gray_word"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:paddingEnd="@dimen/dp_20"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:src="@mipmap/jifeng_me_wode"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_22"
+                        android:layout_marginLeft="@dimen/dp_44"
+                        android:text="在线客服"/>
+                    <ImageView
+                        android:src="@mipmap/jifeng_me_jiantou"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:background="@color/gray_word"/>
+                <RelativeLayout
+                    android:id="@+id/set"
+                    android:layout_width="match_parent"
+                    android:paddingEnd="@dimen/dp_20"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:src="@mipmap/jifeng_me_shezhi"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_22"
+                        android:layout_marginLeft="@dimen/dp_44"
+                        android:text="设置"/>
+                    <ImageView
+                        android:src="@mipmap/jifeng_me_jiantou"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="@dimen/dp_20"
+                        android:layout_marginBottom="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"/>
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:background="@color/gray_word"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</FrameLayout>

@@ -10,34 +10,35 @@ import com.bumptech.glide.request.RequestOptions;
 import com.example.boxteam.R;
 import com.example.boxteam.wsqboss.base.BaseAdapter;
 import com.example.boxteam.wsqboss.bean.home.CourseBean;
-import com.example.boxteam.wsqboss.bean.home.IntroduceBean;
 import com.example.boxteam.wsqboss.bean.home.LiveBean;
 
 import java.util.List;
 
-public class CourseAdapter extends BaseAdapter {
+public class CollectAdapter extends BaseAdapter {
 
-    public CourseAdapter(Context context, List<CourseBean> data) {
+    public CollectAdapter(Context context, List<LiveBean> data) {
         super(context, data);
     }
 
     @Override
     protected int getLayout(int type) {
-        return R.layout.adapter_item_course;
+        return R.layout.adapter_main_collect;
     }
 
     @Override
     protected void bindData(Object data, VH vh) {
-        ImageView img = (ImageView) vh.getViewById(R.id.img_live);
-        TextView name = (TextView) vh.getViewById(R.id.txt_style);
-        TextView txt = (TextView) vh.getViewById(R.id.txt);
+        ImageView img = (ImageView) vh.getViewById(R.id.img);
+        TextView text = (TextView) vh.getViewById(R.id.text_liv);
+        TextView name = (TextView) vh.getViewById(R.id.teacher_name);
+        TextView time = (TextView) vh.getViewById(R.id.time);
 
-        CourseBean liveBean= (CourseBean) data;
+        LiveBean liveBean= (LiveBean) data;
 
         Glide.with(context).load( liveBean.getImage()).apply(new RequestOptions().transform(new RoundedCorners(10))).into(img);
 
+        text.setText(liveBean.getText_lian());
+        name.setText(liveBean.getTeacher_name());
+        time.setText(liveBean.getTime());
 
-        name.setText(liveBean.getName()+"\t"+liveBean.getSum());
-        txt.setText(liveBean.getText());
     }
 }

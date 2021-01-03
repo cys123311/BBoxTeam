@@ -169,6 +169,7 @@
         android:layout_height="@dimen/dp_2"
         android:background="#E6E4E4"/>
     <Button
+        android:id="@+id/btn"
         android:layout_marginTop="@dimen/dp_50"
         android:layout_width="@dimen/dp_200"
         android:layout_height="@dimen/dp_40"

@@ -1,6 +1,7 @@
 package com.example.boxteam.ui.home;
 
 
+import android.content.Intent;
 import android.widget.ImageView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -11,8 +12,10 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
 import com.example.boxteam.R;
+import com.example.boxteam.base.BaseAdapter;
 import com.example.boxteam.base.BaseFragment;
 import com.example.boxteam.base.BasePresenter;
+import com.example.boxteam.lc.ClasssActivity;
 import com.example.boxteam.ui.adapter.CourseAdapter;
 import com.example.boxteam.ui.adapter.IntroduceAdapter;
 import com.example.boxteam.ui.adapter.LiveAdapter;
@@ -21,6 +24,7 @@ import com.example.boxteam.ui.home.bean.CourseBean;
 import com.example.boxteam.ui.home.bean.IntroduceBean;
 import com.example.boxteam.ui.home.bean.LiveBean;
 import com.example.boxteam.ui.home.bean.OneBean;
+import com.example.boxteam.wsqboss.home.main.DetailsActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -92,6 +96,20 @@ public class HomeFragment extends BaseFragment {
         rvOne.setLayoutManager(new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.HORIZONTAL));
         OneAdapter oneAdapter = new OneAdapter(getActivity(), oneBeanList);
         rvOne.setAdapter(oneAdapter);
+
+        liveAdapter.addListClick(new BaseAdapter.IListClick() {
+            @Override
+            public void itemClick(int pos) {
+                startActivity(new Intent(getActivity(), DetailsActivity.class));
+            }
+        });
+
+        oneAdapter.addListClick(new BaseAdapter.IListClick() {
+            @Override
+            public void itemClick(int pos) {
+                startActivity(new Intent(getActivity(), ClasssActivity.class));
+            }
+        });
     }
 
     @Override

@@ -59,10 +59,4 @@ public class ClasssActivity extends BaseActivity {
         classRlv.setAdapter(classAdapter);
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        // TODO: add setContentView(...) invocation
-        ButterKnife.bind(this);
-    }
 }

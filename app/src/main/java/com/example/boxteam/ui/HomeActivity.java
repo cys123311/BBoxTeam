@@ -11,6 +11,7 @@ import com.example.boxteam.base.BaseActivity;
 import com.example.boxteam.interfases.IBasePresenter;
 import com.example.boxteam.ui.course.CourseFragment;
 import com.example.boxteam.ui.events.EventsFragment;
+import com.example.boxteam.ui.home.Dhz_Activity_Fragment;
 import com.example.boxteam.ui.home.HomeFragment;
 import com.example.boxteam.ui.me.MeFragment;
 import com.google.android.material.tabs.TabLayout;
@@ -46,7 +47,7 @@ public class HomeActivity extends BaseActivity {
         List<Fragment> list=new ArrayList<>();
         list.add(new HomeFragment());//首页
         list.add(new CourseFragment());//课程
-        list.add(new EventsFragment());//活动
+        list.add(new Dhz_Activity_Fragment());//活动
         list.add(new MeFragment());//我的
 
         mcvPager.setAdapter(new FragmentStatePagerAdapter(getSupportFragmentManager()) {

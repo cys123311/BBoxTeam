@@ -6,15 +6,18 @@ import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.boxteam.R;
 import com.example.boxteam.base.BaseActivity;
 import com.example.boxteam.interfases.IBasePresenter;
+import com.example.boxteam.utils.SpUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class IdentifyCodeActivity extends BaseActivity {
     @BindView(R.id.xieyi)
@@ -27,6 +30,8 @@ public class IdentifyCodeActivity extends BaseActivity {
     LinearLayout llYanz;
     @BindView(R.id.ll_mm)
     LinearLayout llMm;
+    @BindView(R.id.btn)
+    Button btn;
 
     @Override
     protected int getLayout() {
@@ -60,6 +65,8 @@ public class IdentifyCodeActivity extends BaseActivity {
                 llYanz.setVisibility(View.VISIBLE);
             }
         });
+
+
     }
 
     @Override
@@ -75,10 +82,11 @@ public class IdentifyCodeActivity extends BaseActivity {
         xieyi.setText(builder);
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        // TODO: add setContentView(...) invocation
-        ButterKnife.bind(this);
+
+
+    @OnClick(R.id.btn)
+    public void onViewClicked() {
+        SpUtils.getInstance().setValue("name","s");
+        finish();
     }
 }

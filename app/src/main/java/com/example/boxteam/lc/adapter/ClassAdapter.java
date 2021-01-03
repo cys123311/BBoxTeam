@@ -1,6 +1,7 @@
 package com.example.boxteam.lc.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
@@ -17,6 +18,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.example.boxteam.R;
 import com.example.boxteam.base.BaseAdapter;
+import com.example.boxteam.lc.CourseSelection;
 import com.example.boxteam.lc.bean.ClassBean;
 import com.example.boxteam.lc.bean.GiftMessage;
 
@@ -47,26 +49,28 @@ public class ClassAdapter extends BaseAdapter {
         btn_see.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                View inflate = LayoutInflater.from(context).inflate(R.layout.pop_item, null);
-                ImageView iv_pop_pic = inflate.findViewById(R.id.iv_pop_pic);
-                Button btn_class_ok = inflate.findViewById(R.id.btn_class_ok);
-                PopupWindow pw = new PopupWindow(inflate,-1,-1);
-                pw.setOutsideTouchable(true);
-                //叉号
-                iv_pop_pic.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        pw.dismiss();
-                    }
-                });
-                //确定
-                btn_class_ok.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        pw.dismiss();
-                    }
-                });
-                pw.showAtLocation(item_con, Gravity.CENTER,0,0);
+                context.startActivity(new Intent(context, CourseSelection.class));
+//                View inflate = LayoutInflater.from(context).inflate(R.layout.pop_item, null);
+//                ImageView iv_pop_pic = inflate.findViewById(R.id.iv_pop_pic);
+//                Button btn_class_ok = inflate.findViewById(R.id.btn_class_ok);
+//                PopupWindow pw = new PopupWindow(inflate,-1,-1);
+//                pw.setOutsideTouchable(true);
+//                //叉号
+//                iv_pop_pic.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        pw.dismiss();
+//                    }
+//                });
+//                //确定
+//                btn_class_ok.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        pw.dismiss();
+//                    }
+//                });
+//                pw.showAtLocation(item_con, Gravity.CENTER,0,0);
+
             }
         });
     }

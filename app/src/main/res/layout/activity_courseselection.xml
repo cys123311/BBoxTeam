@@ -111,6 +111,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_time"
         android:layout_width="@dimen/dp_300"
         android:layout_height="@dimen/dp_40"
         app:layout_constraintTop_toTopOf="parent"

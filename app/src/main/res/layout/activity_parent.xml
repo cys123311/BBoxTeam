@@ -201,6 +201,7 @@
                 android:textStyle="bold" />
 
             <Button
+                android:id="@+id/pingjia"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/dp_32"
                 android:layout_margin="@dimen/dp_4"

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/dd_activity_sign"
+           android:background="@mipmap/activity_sign_up_t"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dd_activity_sign_time"
+        android:background="@mipmap/activity_sign_up_f"
+        android:layout_marginTop="@dimen/dp_65"
+        android:layout_marginLeft="@dimen/dp_20"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dd_activity_sign_baoming"
+        android:background="@mipmap/activity_sign_up_l"
+        android:layout_marginTop="@dimen/dp_59"
+        android:layout_toRightOf="@+id/dd_activity_sign_time"
+        android:layout_marginLeft="@dimen/dp_60"/>
+</RelativeLayout>

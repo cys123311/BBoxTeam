@@ -1,10 +1,8 @@
 package com.example.boxteam.cysboss;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
 
@@ -16,8 +14,8 @@ import com.example.boxteam.R;
 import com.example.boxteam.base.BaseActivity;
 import com.example.boxteam.custom.PileLayout;
 import com.example.boxteam.interfases.IBasePresenter;
-import com.example.boxteam.wsqboss.adapter.home.LiveAdapter;
-import com.example.boxteam.wsqboss.bean.home.LiveBean;
+import com.example.boxteam.ui.adapter.LiveAdapter;
+import com.example.boxteam.ui.home.bean.LiveBean;
 
 import java.util.ArrayList;
 import java.util.List;

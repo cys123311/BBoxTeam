@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 
 import com.example.boxteam.app.MyApp;
 
-
 public class SpUtils {
     private static SpUtils instance;
     private SharedPreferences sp;

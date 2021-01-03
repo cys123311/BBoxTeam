@@ -9,9 +9,6 @@
     <style name="TabLayoutTextStyle">
         <item name="android:textSize">@dimen/sp_12</item>
     </style>
-    <style name="TabLayoutTextStyle">
-        <item name="android:textSize">@dimen/sp_12</item>
-    </style>
 
     <style name="myRatingBar" parent="@android:style/Widget.RatingBar">
         <item name="android:progressDrawable">@drawable/drawable_ratingbar</item>

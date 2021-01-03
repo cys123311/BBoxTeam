@@ -1,7 +1,5 @@
 package com.example.boxteam.base;
 
-
-
 import com.example.boxteam.interfases.IBasePresenter;
 import com.example.boxteam.interfases.IBaseView;
 

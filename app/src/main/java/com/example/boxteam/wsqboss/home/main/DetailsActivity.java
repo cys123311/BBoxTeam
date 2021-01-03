@@ -1,22 +1,19 @@
 package com.example.boxteam.wsqboss.home.main;
 
-import android.os.Bundle;
-
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.boxteam.R;
-import com.example.boxteam.wsqboss.adapter.home.DetailsAdapter;
-import com.example.boxteam.wsqboss.base.BaseActivity;
-import com.example.boxteam.wsqboss.bean.home.DetailsBean;
-import com.example.boxteam.wsqboss.interfases.IBasePresenter;
+import com.example.boxteam.base.BaseActivity;
+import com.example.boxteam.interfases.IBasePresenter;
+import com.example.boxteam.ui.adapter.DetailsAdapter;
+import com.example.boxteam.ui.home.bean.DetailsBean;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class DetailsActivity extends BaseActivity {
 
@@ -32,7 +29,7 @@ public class DetailsActivity extends BaseActivity {
     }
 
     @Override
-    protected IBasePresenter createPrenter() {
+    protected IBasePresenter createPresenter() {
         return null;
     }
 

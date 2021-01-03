@@ -8,13 +8,25 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".wsqboss.app.MyApp"
+        android:name=".app.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <!--引导页-->
+        <activity android:name=".ui.SplaceActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--主页-->
+        <activity android:name=".ui.HomeActivity" />
+
+        <activity android:name=".MainActivity"/>
         <activity android:name=".cysboss.LiveActivity"></activity>
         <activity android:name=".cysboss.LiveOneActivity" />
         <activity android:name=".cysboss.CourseSelection" />
@@ -23,34 +35,15 @@
         <activity android:name=".cysboss.ScheduleActivity" />
         <activity android:name=".cysboss.LogisticsActivity" />
         <activity android:name=".cysboss.DiscountActivity" />
-        <activity android:name=".wsqboss.home.HomeActivity" />
-        <activity android:name=".lc.MessageActivity">
 
-        </activity>
-        <activity android:name=".lc.UserInfoActivity">
-
-        </activity>
-
-        <activity android:name=".lc.JobCardActivity">
-
-        </activity>
-        <activity android:name=".lc.splace.SplaceActivity">
-
-        </activity>
-        <activity android:name=".lc.CustomActivity">
-
-        </activity>
-        <activity android:name=".lc.LoginAgreeActivity">
-
-        </activity>
-        <activity android:name=".lc.IdentifyCodeActivity">
-
-        </activity>
-        <activity android:name=".lc.ClasssActivity">
-
-        </activity>
+        <activity android:name=".lc.MessageActivity"/>
+        <activity android:name=".lc.UserInfoActivity"/>
+        <activity android:name=".lc.JobCardActivity"/>
+        <activity android:name=".lc.CustomActivity"/>
+        <activity android:name=".lc.LoginAgreeActivity"/>
+        <activity android:name=".lc.IdentifyCodeActivity"/>
+        <activity android:name=".lc.ClasssActivity"/>
         <activity android:name=".lc.CourseSelection"/>
-
 
 
         <activity android:name=".bigboss.activity.ActivityActivity"/>
@@ -67,13 +60,7 @@
         <activity android:name=".wsqboss.home.main.SetActivity" />
         <activity android:name=".wsqboss.home.main.CollectActivity" />
         <activity android:name=".wsqboss.home.main.HotActivity" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>

@@ -217,6 +217,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
                 <RelativeLayout
+                    android:id="@+id/layout_zuoye"
                     android:layout_width="match_parent"
                     android:paddingEnd="@dimen/dp_20"
                     android:layout_height="match_parent">
@@ -287,6 +288,7 @@
                     android:layout_marginLeft="@dimen/dp_20"
                     android:background="@color/gray_word"/>
                 <RelativeLayout
+                    android:id="@+id/layout_youhui"
                     android:layout_width="match_parent"
                     android:paddingEnd="@dimen/dp_20"
                     android:layout_height="match_parent">
@@ -318,6 +320,7 @@
                     android:layout_marginLeft="@dimen/dp_20"
                     android:background="@color/gray_word"/>
                 <RelativeLayout
+                    android:id="@+id/layout_jiazhang"
                     android:layout_width="match_parent"
                     android:paddingEnd="@dimen/dp_20"
                     android:layout_height="match_parent">
@@ -350,6 +353,7 @@
                     android:background="@color/gray_word"/>
 
                 <RelativeLayout
+                    android:id="@+id/layout_kefu"
                     android:layout_width="match_parent"
                     android:paddingEnd="@dimen/dp_20"
                     android:layout_height="match_parent">

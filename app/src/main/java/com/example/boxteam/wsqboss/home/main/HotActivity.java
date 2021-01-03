@@ -1,12 +1,10 @@
 package com.example.boxteam.wsqboss.home.main;
 
-import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
 
 import com.example.boxteam.R;
-import com.example.boxteam.wsqboss.base.BaseActivity;
-import com.example.boxteam.wsqboss.interfases.IBasePresenter;
+import com.example.boxteam.base.BaseActivity;
+import com.example.boxteam.interfases.IBasePresenter;
 
 public class HotActivity extends BaseActivity {
 
@@ -17,7 +15,7 @@ public class HotActivity extends BaseActivity {
     }
 
     @Override
-    protected IBasePresenter createPrenter() {
+    protected IBasePresenter createPresenter() {
         return null;
     }
 

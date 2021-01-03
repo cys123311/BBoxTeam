@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.boxteam.R;
-import com.example.boxteam.bigboss.base.BaseAdapter;
+import com.example.boxteam.base.BaseAdapter;
 
 import java.util.List;
 

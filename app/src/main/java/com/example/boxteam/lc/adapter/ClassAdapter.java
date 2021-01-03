@@ -16,7 +16,7 @@ import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.example.boxteam.R;
-import com.example.boxteam.lc.base.BaseAdapter;
+import com.example.boxteam.base.BaseAdapter;
 import com.example.boxteam.lc.bean.ClassBean;
 import com.example.boxteam.lc.bean.GiftMessage;
 

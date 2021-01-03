@@ -10,8 +10,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.boxteam.R;
-import com.example.boxteam.lc.base.BaseActivity;
-import com.example.boxteam.lc.interfaces.IBasePresenter;
+import com.example.boxteam.base.BaseActivity;
+import com.example.boxteam.interfases.IBasePresenter;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -34,7 +34,7 @@ public class IdentifyCodeActivity extends BaseActivity {
     }
 
     @Override
-    protected IBasePresenter createPrenter() {
+    protected IBasePresenter createPresenter() {
         return null;
     }
 

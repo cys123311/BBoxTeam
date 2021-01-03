@@ -8,8 +8,8 @@ import android.text.style.ForegroundColorSpan;
 import android.widget.TextView;
 
 import com.example.boxteam.R;
-import com.example.boxteam.lc.base.BaseActivity;
-import com.example.boxteam.lc.interfaces.IBasePresenter;
+import com.example.boxteam.base.BaseActivity;
+import com.example.boxteam.interfases.IBasePresenter;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -27,7 +27,7 @@ public class CustomActivity extends BaseActivity {
     }
 
     @Override
-    protected IBasePresenter createPrenter() {
+    protected IBasePresenter createPresenter() {
         return null;
     }
 

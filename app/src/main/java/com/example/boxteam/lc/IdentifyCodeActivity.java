@@ -1,13 +1,18 @@
 package com.example.boxteam.lc;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
+import android.text.method.LinkMovementMethod;
+import android.text.style.ClickableSpan;
 import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
 
 import com.example.boxteam.R;
 import com.example.boxteam.lc.base.BaseActivity;
@@ -72,6 +77,23 @@ public class IdentifyCodeActivity extends BaseActivity {
         int end1 = 26;
         builder.setSpan(new ForegroundColorSpan(Color.BLUE), start, end, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
         builder.setSpan(new ForegroundColorSpan(Color.BLUE), start1, end1, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
+        ClickableSpan click = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget) {
+                Intent intent = new Intent(IdentifyCodeActivity.this, CourseSelection.class);
+                startActivity(intent);
+            }
+        };
+        builder.setSpan(click,7,19,Spanned.SPAN_INCLUSIVE_INCLUSIVE);
+        ClickableSpan click1 = new ClickableSpan() {
+            @Override
+            public void onClick(@NonNull View widget) {
+                Intent intent = new Intent(IdentifyCodeActivity.this, CourseSelection.class);
+                startActivity(intent);
+            }
+        };
+        builder.setSpan(click1,20,26,Spanned.SPAN_INCLUSIVE_INCLUSIVE);
+        xieyi.setMovementMethod(LinkMovementMethod.getInstance());
         xieyi.setText(builder);
     }
 

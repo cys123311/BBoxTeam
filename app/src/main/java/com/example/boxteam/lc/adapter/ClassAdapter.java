@@ -15,6 +15,8 @@ import android.widget.TextView;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.example.boxteam.R;
 import com.example.boxteam.lc.base.BaseAdapter;
 import com.example.boxteam.lc.bean.ClassBean;
@@ -42,7 +44,7 @@ public class ClassAdapter extends BaseAdapter {
         Button btn_see = (Button) vh.getViewById(R.id.btn_see);
 
         class_name.setText(bean.getName());
-        img_class.setImageResource(bean.getPic());
+        Glide.with(context).load(bean.getPic()).apply(new RequestOptions().circleCrop()).into(img_class);
 
         btn_see.setOnClickListener(new View.OnClickListener() {
             @Override

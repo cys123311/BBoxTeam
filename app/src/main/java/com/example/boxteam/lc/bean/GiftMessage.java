@@ -13,7 +13,7 @@ public class GiftMessage {
     public void setTime(String time) {
         this.time = time;
     }
-    //    public GiftMessage(String name, String can, String gift) {
+//        public GiftMessage(String name, String can, String gift) {
 //        this.name = name;
 //        this.can = can;
 //        this.gift = gift;

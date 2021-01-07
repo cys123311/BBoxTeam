@@ -182,13 +182,16 @@
                 android:id="@+id/tb_tab"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:tabSelectedTextColor="@color/colorOrange"
                 app:layout_constraintTop_toBottomOf="@+id/cl_title" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_jf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
         </LinearLayout>
+
     </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

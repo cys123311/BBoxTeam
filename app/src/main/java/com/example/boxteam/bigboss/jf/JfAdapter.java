@@ -32,6 +32,6 @@ public class JfAdapter extends BaseAdapter {
 
         daty.setText( jfBean.getData() );
         time.setText( jfBean.getTime() );
-        count.setText( jfBean.getCount()+"" );
+        count.setText( "+"+jfBean.getCount() + "" );
     }
 }

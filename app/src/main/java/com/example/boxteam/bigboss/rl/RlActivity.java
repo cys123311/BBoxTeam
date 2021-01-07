@@ -1,5 +1,6 @@
 package com.example.boxteam.bigboss.rl;
 
+import android.content.Intent;
 import android.widget.CalendarView;
 import android.widget.Toast;
 
@@ -43,6 +44,10 @@ public class RlActivity extends BaseActivity {
             public void onSelectedDayChange( CalendarView view, int year, int month, int dayOfMonth) {
                 //显示用户选择的日期
                 Toast.makeText( RlActivity.this,year + "年" + month + "月" + dayOfMonth + "日",Toast.LENGTH_SHORT).show();
+                Intent intent = getIntent();
+                intent.putExtra( "ask", year + "-" + month + "-" + dayOfMonth);
+                setResult( 2,intent );
+                finish();
             }
         });
 

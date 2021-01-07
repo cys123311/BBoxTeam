@@ -178,9 +178,10 @@
                 android:id="@+id/tv_ask_txt5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dp_10"
-
+                android:layout_marginLeft="@dimen/dp_15"
                 android:text="申请时间"
+                android:textSize="@dimen/dp_14"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -189,17 +190,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/dp_10"
-                android:layout_marginLeft="20dp"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
                 android:text="选择申请时间"
-                app:layout_constraintLeft_toRightOf="@id/tv_ask_txt5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <Button
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_ok"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dp_40"
             android:layout_marginTop="@dimen/dp_10"
@@ -212,31 +214,31 @@
             app:layout_constraintTop_toBottomOf="@id/cl_wl" />
 
         <TextView
-            android:text="规则说明"
             android:id="@+id/tv_ask_txt7"
-            android:layout_margin="@dimen/dp_5"
-            app:layout_constraintTop_toBottomOf="@id/btn_login"
-            app:layout_constraintLeft_toLeftOf="parent"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="规则说明"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_ok" />
 
         <TextView
-            android:text="1.请假次数 每年不超过XXXXX，XXXXXXXXXXXXX。"
             android:id="@+id/tv_ask_txt8"
-            android:layout_margin="@dimen/dp_5"
-            app:layout_constraintTop_toBottomOf="@id/tv_ask_txt7"
-            app:layout_constraintLeft_toLeftOf="parent"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="1.请假次数 每年不超过XXXXX，XXXXXXXXXXXXX。"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_ask_txt7" />
 
         <TextView
-            android:text="2.提交后XX分钟以内可以取消请假申请。"
             android:id="@+id/tv_ask_txt9"
-            android:layout_margin="@dimen/dp_5"
-            app:layout_constraintTop_toBottomOf="@id/tv_ask_txt8"
-            app:layout_constraintLeft_toLeftOf="parent"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="2.提交后XX分钟以内可以取消请假申请。"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_ask_txt8" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,11 @@
 package com.example.boxteam.bigboss.jf;
 
 import android.os.Bundle;
-import android.widget.Toast;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -21,6 +23,8 @@ public class JfActivity extends AppCompatActivity {
     TabLayout tbTab;
     @BindView(R.id.rv_jf)
     RecyclerView rvJf;
+    @BindView(R.id.iv_call)
+    ImageView ivCall;
     private JfAdapter jfAdapter;
 
     @Override
@@ -36,16 +40,23 @@ public class JfActivity extends AppCompatActivity {
 
         ArrayList<JfBean> jfList = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            JfBean jfBean = new JfBean( "2020-12-12", "12:12:12", 1 );
+            JfBean jfBean = new JfBean( "2020-12-12", "12:12:12", 10 );
             jfList.add( jfBean );
         }
 
         rvJf.setLayoutManager( new LinearLayoutManager( this ) );
-        jfAdapter = new JfAdapter(this,jfList);
+        jfAdapter = new JfAdapter( this, jfList );
         rvJf.setAdapter( jfAdapter );
 
+        rvJf.addItemDecoration( new DividerItemDecoration( this, DividerItemDecoration.VERTICAL ) );
 
 
-
+        //退出
+        ivCall.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        } );
     }
 }

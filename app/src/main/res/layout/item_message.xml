@@ -30,20 +30,19 @@
         android:layout_height="@dimen/dp_30"
         android:src="@mipmap/music"/>
     <LinearLayout
+        android:background="@drawable/talk"
         android:layout_marginTop="@dimen/dp_20"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_8"
         android:orientation="vertical"
         android:paddingVertical="@dimen/dp_10"
         app:layout_constraintLeft_toRightOf="@id/img_music"
         android:layout_width="@dimen/dp_300"
-        android:layout_height="@dimen/dp_100"
-        android:background="@drawable/shape_message">
+        android:layout_height="@dimen/dp_100">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dp_20">
-
+            android:layout_marginLeft="@dimen/dp_10">
 
         <TextView
             app:layout_constraintLeft_toLeftOf="parent"
@@ -66,16 +65,17 @@
             android:layout_height="wrap_content"
             android:text="111"
             android:layout_marginTop="@dimen/dp_10"
-            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_10"
             android:textColor="#111"/>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dp_8"
-            android:layout_marginLeft="@dimen/dp_20">
+            android:layout_marginLeft="@dimen/dp_10">
 
 
         <TextView
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:id="@+id/txt_can"
             android:layout_width="wrap_content"

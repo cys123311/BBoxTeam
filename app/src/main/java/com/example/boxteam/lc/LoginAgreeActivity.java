@@ -1,8 +1,8 @@
 package com.example.boxteam.lc;
 
 import com.example.boxteam.R;
-import com.example.boxteam.base.BaseActivity;
-import com.example.boxteam.interfases.IBasePresenter;
+import com.example.boxteam.lc.base.BaseActivity;
+import com.example.boxteam.lc.interfaces.IBasePresenter;
 
 public class LoginAgreeActivity extends BaseActivity {
     @Override
@@ -11,7 +11,7 @@ public class LoginAgreeActivity extends BaseActivity {
     }
 
     @Override
-    protected IBasePresenter createPresenter() {
+    protected IBasePresenter createPrenter() {
         return null;
     }
 

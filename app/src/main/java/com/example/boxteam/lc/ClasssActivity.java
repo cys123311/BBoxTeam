@@ -7,10 +7,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.boxteam.R;
-import com.example.boxteam.base.BaseActivity;
-import com.example.boxteam.interfases.IBasePresenter;
 import com.example.boxteam.lc.adapter.ClassAdapter;
+import com.example.boxteam.lc.base.BaseActivity;
 import com.example.boxteam.lc.bean.ClassBean;
+import com.example.boxteam.lc.interfaces.IBasePresenter;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
@@ -31,10 +31,9 @@ public class ClasssActivity extends BaseActivity {
     }
 
     @Override
-    protected IBasePresenter createPresenter() {
+    protected IBasePresenter createPrenter() {
         return null;
     }
-
 
     @Override
     protected void initView() {
@@ -59,4 +58,10 @@ public class ClasssActivity extends BaseActivity {
         classRlv.setAdapter(classAdapter);
     }
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // TODO: add setContentView(...) invocation
+        ButterKnife.bind(this);
+    }
 }

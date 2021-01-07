@@ -12,11 +12,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.boxteam.R;
-import com.example.boxteam.base.BaseActivity;
-import com.example.boxteam.interfases.IBasePresenter;
 import com.example.boxteam.lc.adapter.MessageAdapter;
+import com.example.boxteam.lc.base.BaseActivity;
 import com.example.boxteam.lc.bean.GiftMessage;
-
+import com.example.boxteam.lc.interfaces.IBasePresenter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +35,7 @@ public class MessageActivity extends BaseActivity {
     }
 
     @Override
-    protected IBasePresenter createPresenter() {
+    protected IBasePresenter createPrenter() {
         return null;
     }
 

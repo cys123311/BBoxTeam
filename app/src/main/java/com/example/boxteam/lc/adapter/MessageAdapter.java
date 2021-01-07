@@ -8,7 +8,7 @@ import android.text.style.ForegroundColorSpan;
 import android.widget.TextView;
 
 import com.example.boxteam.R;
-import com.example.boxteam.base.BaseAdapter;
+import com.example.boxteam.lc.base.BaseAdapter;
 import com.example.boxteam.lc.bean.GiftMessage;
 
 import java.util.List;

@@ -34,11 +34,7 @@ public class Dhz_Activity_Fragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = LayoutInflater.from(getActivity()).inflate(R.layout.dd_activity_fragment, null);
-        dd_activity_newActivity1 = view.findViewById(R.id.dd_activity_newActivity1);
-        dd_activity_more1 = view.findViewById(R.id.dd_activity_more1);
-        dd_activity_huodong1 = view.findViewById(R.id.dd_activity_huodong1);
-        dd_activity_newActivity2 = view.findViewById(R.id.dd_activity_newActivity2);
-        dd_activity_more2 = view.findViewById(R.id.dd_activity_more2);
+
         dd_activity_recy = view.findViewById(R.id.dd_activity_recy);
         signList = new ArrayList<>();
         initSign();

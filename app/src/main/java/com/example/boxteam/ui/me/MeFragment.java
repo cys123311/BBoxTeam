@@ -16,6 +16,7 @@ import com.example.boxteam.base.BasePresenter;
 import com.example.boxteam.bigboss.jf.JfActivity;
 import com.example.boxteam.bigboss.parent.ParentActivity;
 import com.example.boxteam.cysboss.DiscountActivity;
+import com.example.boxteam.cysboss.LogisticsActivity;
 import com.example.boxteam.cysboss.ScheduleActivity;
 import com.example.boxteam.cysboss.TaskActivity;
 import com.example.boxteam.lc.CustomActivity;
@@ -54,6 +55,8 @@ public class MeFragment extends BaseFragment {
     RelativeLayout kecheng;
     @BindView(R.id.jifen)
     Button jifen;
+    @BindView(R.id.layout_dingban)
+    RelativeLayout layoutDingban;
 
 
     @Override
@@ -82,7 +85,7 @@ public class MeFragment extends BaseFragment {
     @OnClick({R.id.collect, R.id.set, R.id.layout_zuoye
             , R.id.layout_jiazhang, R.id.layout_kefu,
             R.id.layout_youhui, R.id.img_header, R.id.kecheng
-            , R.id.jifen})
+            , R.id.jifen, R.id.layout_dingban})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.collect:
@@ -111,6 +114,9 @@ public class MeFragment extends BaseFragment {
                 break;
             case R.id.jifen:
                 startActivity(new Intent(getActivity(), JfActivity.class));
+                break;
+            case R.id.layout_dingban:
+                startActivity(new Intent(getActivity(), LogisticsActivity.class));
                 break;
         }
     }

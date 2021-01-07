@@ -260,6 +260,7 @@
                     android:layout_marginLeft="@dimen/dp_20"
                     android:background="@color/gray_word"/>
                 <RelativeLayout
+                    android:id="@+id/rl_me_hd"
                     android:layout_width="match_parent"
                     android:paddingEnd="@dimen/dp_20"
                     android:layout_height="match_parent">

@@ -22,6 +22,7 @@ import com.example.boxteam.cysboss.TaskActivity;
 import com.example.boxteam.lc.CustomActivity;
 import com.example.boxteam.lc.UserInfoActivity;
 import com.example.boxteam.wsqboss.home.main.CollectActivity;
+import com.example.boxteam.wsqboss.home.main.HotActivity;
 import com.example.boxteam.wsqboss.home.main.SetActivity;
 
 import butterknife.BindView;
@@ -57,6 +58,8 @@ public class MeFragment extends BaseFragment {
     Button jifen;
     @BindView(R.id.layout_dingban)
     RelativeLayout layoutDingban;
+    @BindView(R.id.rl_me_hd)
+    RelativeLayout rlMeHd;
 
 
     @Override
@@ -66,8 +69,8 @@ public class MeFragment extends BaseFragment {
 
     @Override
     protected void initView() {
-        Glide.with(getActivity()).load(R.mipmap.jifeng_me_beijing).apply(new RequestOptions().transform(new RoundedCorners(20))).into(imgBack);
-        Glide.with(getActivity()).load(R.mipmap.header).apply(new RequestOptions().transform(new RoundedCorners(50))).into(imgHeader);
+        Glide.with( getActivity() ).load( R.mipmap.jifeng_me_beijing ).apply( new RequestOptions().transform( new RoundedCorners( 20 ) ) ).into( imgBack );
+        Glide.with( getActivity() ).load( R.mipmap.header ).apply( new RequestOptions().transform( new RoundedCorners( 50 ) ) ).into( imgHeader );
 
     }
 
@@ -85,38 +88,41 @@ public class MeFragment extends BaseFragment {
     @OnClick({R.id.collect, R.id.set, R.id.layout_zuoye
             , R.id.layout_jiazhang, R.id.layout_kefu,
             R.id.layout_youhui, R.id.img_header, R.id.kecheng
-            , R.id.jifen, R.id.layout_dingban})
+            , R.id.jifen, R.id.layout_dingban,R.id.rl_me_hd})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.collect:
-                startActivity(new Intent(getActivity(), CollectActivity.class));
+                startActivity( new Intent( getActivity(), CollectActivity.class ) );
                 break;
             case R.id.set:
-                startActivity(new Intent(getActivity(), SetActivity.class));
+                startActivity( new Intent( getActivity(), SetActivity.class ) );
                 break;
             case R.id.layout_zuoye:
-                startActivity(new Intent(getActivity(), TaskActivity.class));
+                startActivity( new Intent( getActivity(), TaskActivity.class ) );
                 break;
             case R.id.layout_jiazhang:
-                startActivity(new Intent(getActivity(), ParentActivity.class));
+                startActivity( new Intent( getActivity(), ParentActivity.class ) );
                 break;
             case R.id.layout_kefu:
-                startActivity(new Intent(getActivity(), CustomActivity.class));
+                startActivity( new Intent( getActivity(), CustomActivity.class ) );
                 break;
             case R.id.layout_youhui:
-                startActivity(new Intent(getActivity(), DiscountActivity.class));
+                startActivity( new Intent( getActivity(), DiscountActivity.class ) );
                 break;
             case R.id.img_header:
-                startActivity(new Intent(getActivity(), UserInfoActivity.class));
+                startActivity( new Intent( getActivity(), UserInfoActivity.class ) );
                 break;
             case R.id.kecheng:
-                startActivity(new Intent(getActivity(), ScheduleActivity.class));
+                startActivity( new Intent( getActivity(), ScheduleActivity.class ) );
                 break;
             case R.id.jifen:
-                startActivity(new Intent(getActivity(), JfActivity.class));
+                startActivity( new Intent( getActivity(), JfActivity.class ) );
                 break;
             case R.id.layout_dingban:
-                startActivity(new Intent(getActivity(), LogisticsActivity.class));
+                startActivity( new Intent( getActivity(), LogisticsActivity.class ) );
+                break;
+            case R.id.rl_me_hd:
+                startActivity( new Intent( getActivity(), HotActivity.class ) );
                 break;
         }
     }

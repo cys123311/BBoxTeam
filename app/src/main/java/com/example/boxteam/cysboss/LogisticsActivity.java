@@ -38,8 +38,7 @@ public class LogisticsActivity extends BaseActivity {
     @BindView(R.id.mRec_logistics)
     RecyclerView mRecLogistics;
 
-    private RecyclerView rvTrace;
-    private List<TraceBean> traceList = new ArrayList<>(10);
+    private List<TraceBean> traceList = new ArrayList<>();
     private TraceListAdapter adapter;
 
     @Override
@@ -70,7 +69,7 @@ public class LogisticsActivity extends BaseActivity {
         traceList.add(new TraceBean("2016-05-23 18:59:41", "[杭州市] 快件离开 [杭州乔司区]已发往[沈阳]"));
         traceList.add(new TraceBean("2016-05-23 18:35:32", "[杭州市] [杭州乔司区]的市场部已收件 电话:18358xxxxxx"));
         adapter = new TraceListAdapter(this, traceList);
-        rvTrace.setLayoutManager(new LinearLayoutManager(this));
-        rvTrace.setAdapter(adapter);
+        mRecLogistics.setLayoutManager(new LinearLayoutManager(this));
+        mRecLogistics.setAdapter(adapter);
     }
 }
